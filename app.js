@@ -2,13 +2,13 @@ var express = require("express"),
  app = express(),
  bodyParser = require("body-parser"),
  mongoose = require("mongoose"),
- Campground = require("./models/campground"),
- Comment = require("./models/comment"),
+//  Campground = require("./models/campground"),
+//  Comment = require("./models/comment"),
  User = require("./models/user"),
  flash = require("connect-flash"),
  passport = require("passport"),
  LocalStrategy = require("passport-local"),
- seedDB = require("./seeds"),
+//  seedDB = require("./seeds"),
  methodOverride = require('method-override');
 
 
@@ -16,7 +16,7 @@ var commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
-mongoose.connect(process.env.databaseURL, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
