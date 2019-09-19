@@ -17,15 +17,11 @@ A platform where users post hotels and write reviews about them and other users 
   
   * User login with username and password
 
-  * Admin sign-up with admin code
-
 * Authorization:
 
   * One cannot manage posts and view user profile without being authenticated
 
   * One cannot edit or delete posts and comments created by other users
-
-  * Admin can manage all posts and comments
 
 * Manage campground posts with basic functionalities:
 
@@ -33,15 +29,9 @@ A platform where users post hotels and write reviews about them and other users 
 
   * Upload campground photos
 
-  * Display campground location on Google Maps
-  
-  * Search existing campgrounds
-
 * Manage user account with basic functionalities:
 
   * ~~Password reset via email confirmation~~ (disabled)
-
-  * Profile page setup with sign-up
 
 * Flash messages responding to users' interaction with the app
 
