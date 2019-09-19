@@ -1,16 +1,16 @@
 <!doctype= html>
 <html>
     <head>
-        <title>Yelp Camp</title>
+        <title>Yelp Hotel</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
         <link rel="stylesheet" href="/stylesheets/main.css"></link>
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default nav-mb">
           <div class="container-fluid">
             <div class="navbar-header">
               <a class="navbar-brand" href="#">
-                YelpCamp
+                YelpHotel
               </a>
             </div>
             <div class= "collapse navbar-collapse">
@@ -26,8 +26,8 @@
             </div>
           </div>
         </nav>
-        
-        <div class="container">
+        <div class="landing">
+          <div class="container body-pt">
             <% if(error && error.length > 0){%>
             <div class="alert alert-danger" role="alert">
               <%= error %>
@@ -38,5 +38,7 @@
               <%= success %>
             </div>
             <% } %>
-        </div>
+          </div>
+        
+
        
