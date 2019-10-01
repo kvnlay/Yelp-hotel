@@ -2,6 +2,8 @@
 
 A platform where users post hotels and write reviews about them and other users can comment and like.
 
+![yelphotel](https://user-images.githubusercontent.com/21004010/65952632-261a3a80-e43a-11e9-9ca1-a16691d3495e.png)
+
 ## [Live version](https://polar-citadel-56618.herokuapp.com/)
 
 ## Technologies
