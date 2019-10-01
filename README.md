@@ -25,7 +25,7 @@ A platform where users post hotels and write reviews about them and other users 
 
   * One cannot edit or delete posts and comments created by other users
 
-* Manage campground posts with basic functionalities:
+* Manage hotel posts with basic functionalities:
 
   * Create, edit and delete posts and comments
 
