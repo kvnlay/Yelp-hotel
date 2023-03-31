@@ -18,7 +18,7 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes = require("./routes/index");
     
 dotenv.config();
-mongoose.connect(process.env.databaseURL, { useNewUrlParser: true });
+mongoose.connect(process.env.databaseURL, { useNewUrlParser: true, useUnifiedTopology: true });
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -32,7 +32,7 @@ app.use(flash());
 //=========
 // Passport Config
 //=========
-app.use(require("express-session")({
+app.use(require("cookie-session")({
     secret: "this is bullshit",
     resave: false,
     saveUninitialized: false
